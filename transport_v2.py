@@ -319,6 +319,7 @@ import plotly.express as px
 # Your DEMAND matrix, evaluate_design(), pareto_df should already exist
 
 app = dash.Dash(__name__)
+server = app.server  # IMPORTANT for Render / gunicorn
 app.title = "Multimodal Transport Scenario Explorer"
 
 # Layout
@@ -462,4 +463,3 @@ def update_scenario(rail_speed, rail_freq, rail_cap, bus_speed, bus_freq, bus_ca
 
 if __name__ == '__main__':
     app.run()
-
