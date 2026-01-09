@@ -461,5 +461,5 @@ def update_scenario(rail_speed, rail_freq, rail_cap, bus_speed, bus_freq, bus_ca
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
