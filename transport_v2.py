@@ -322,14 +322,6 @@ app = dash.Dash(__name__)
 server = app.server  # IMPORTANT for Render / gunicorn
 app.title = "Multimodal Transport Scenario Explorer"
 
-# Layout
-import dash
-from dash import dcc, html
-from dash.dependencies import Input, Output
-
-app = dash.Dash(__name__)
-app.title = "Multimodal Transport Scenario Explorer"
-
 app.layout = html.Div([
     html.H1("Scenario Explorer: Lemanique Arc Transport"),
 
